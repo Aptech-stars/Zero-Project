@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <style>
+     * {
+        box-sizing: border-box;
+      }
+    .nav-items{
+      font-size: 15px;
+      color: rgb(245, 236, 236);
+    }
+    .nav-links:hover{
+      color: red;
+    }
+    .nav-items{
+      margin-right: 2rem;
+    }
+    #last{
+      margin-right: 10rem;
+    }
+    .logo{
+      width: 7rem;
+
+    }
+    .nav-icon{
+      margin-right: 1.5rem;
+    } 
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        overflow-y: visible;
+        overflow-x: hidden;
+      }
+      .card{
+        border: none;
+      }
+      .card-body{
+        background-color: rgba(227, 222, 222, 0.2);
+      }
+  </style>
+  <body>
+     <!-- Frist navbar for marquee tag for sales -->
+     <!-- <div>
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: chartreuse; height: 30px;">
+          <div class="container">
+            <div class="w-100 d-flex">
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="width: 100%; text-align: center;">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <P style=" display: inline; padding: 5px;">Limited Stock only! Up to 77% off. Sales End Soon.</P>
+                  </div>
+                  <div class="carousel-item">
+                    <P style=" display: inline; padding: 5px;">Limited Stock only! Up to 77% off. Sales End Soon.</P>
+                  </div>
+                  <div class="carousel-item">
+                    <P style=" display: inline; padding: 5px;">Limited Stock only! Up to 77% off. Sales End Soon.</P>
+                  </div>
+                </div>
+              </div>
+          </div>
+         </nav>
+        </div> -->
+        <!-- Frist navbar end -->
+         
+        <!-- Main navbar start -->
+        <nav class="navbar navbar-expand-lg bg-success">
+          <div class="container-fluid">
+            <img src="Assets/logo zero.webp" class="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-white" aria-current="page" href="#" style="margin-left: 150px;">Home</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link text-white" href="Azadi Sale 🇵🇰.html">Azadi Sale 🇵🇰</a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="Smart Watches.html">Smart Watches</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="Earbuds.html">EarBuds</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="Support.html">Support</a>
+                </li>
+              </ul>
+            </div>
+            <a href="User.html"><i class="fa-solid fa-user text-white nav-icon"></i></a>
+            <!-- Search Bar start -->
+          <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-magnifying-glass text-white nav-icon"></i></button>
+          <!-- Modal -->
+            <div class="modal fade bg-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                 <div class="modal-content">
+                  <div class="modal-header">
+                  <input type="search" id="exampleModalLabel" placeholder="Search" style="width: 90%; height: 3rem;">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="width: 5%;"></button>
+                  </div>
+               </div>
+              </div>
+             </div>
+          <!-- search bar End -->
+             <!-- Cart start -->
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><a href="cart.html"><i class="fa-solid fa-cart-shopping text-white nav-icon"></a></i></button>
+          <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body" style="display: none;">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
+          </div>
+         </div>
+         <!-- Cart End -->
+          </div>
+        </nav>
+         <!-- main navbar End -->
+          <!-- text_start -->
+          <div class="row" style="margin-left: 5%;">
+            <div class="col-md-12" style="margin-top: 10px;">
+                <span style="font-size: 12px;">Home></span>
+                <span style="font-size: 12px;">Story></span>
+                <span style="font-size: 12px;">Troubleshooting Common Issues With Earbuds</span>
+            </div>
+          </div>
+          <!-- text_End -->
+           <!-- text_start -->
+           <div class="row">
+            <div class="col-12" style="text-align: center;">August 8, 2024</div>
+        </div>
+            <!-- text_End -->
+               <!-- text_start -->
+           <div class="row">
+            <div class="col-12" style="text-align: center;"><h2>Troubleshooting Common Issues With Earbuds</h2></div>
+        </div>
+            <!-- text_End -->
+            <!-- card start -->
+            <div class="card" style="width: 80%; margin-left: 10%;">
+                <img src="Assets/earbuds_battery_life.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Earbuds have become an essential part of our daily lives, providing us with a seamless way to enjoy music, podcasts, and calls on the go. However, like any other technology, they are not without their flaws. Whether you’re dealing with connectivity problems, sound quality issues, or uncomfortable fits, these challenges can be frustrating. In this guide, we'll explore the most commonissues with earbudsand provide practical solutions to help you get the most out of your listening experience.</p>
+                  <h6><strong>Zero Lifestyle: Pakistan’s Emerging Brand for Wireless Earbuds</strong></h6>
+                  <p class="card-text">Before we dive into troubleshooting, it’s worth highlighting a brand that’s been making waves in the Pakistani market—Zero Lifestyle. This homegrown brand has quickly become known for its high-quality wireless earbuds, offering products that rival international brands in both design and performance. Zero Lifestyle’s earbuds are particularly popular for their impressive battery life, sleek design, and affordable price point, making them a top choice for consumers looking for a reliable and stylish audio solution.</p>
+                  <p class="card-text">Zero Lifestyle’s earbuds are designed to cater to the needs of a wide range of users, from fitness enthusiasts to casual listeners. However, even the best earbuds can encounter issues from time to time. Below, we’ll discuss some of the most commonissues with earbuds wirelessand how you can resolve them.</p>
+                  <h6><strong>Common Connectivity Issues With Earbuds Wireless</strong></h6>
+                  <ul>
+                    <li><strong>Bluetooth Pairing Problems</strong>
+                        <p class="card-text">One of the most frequentissues with earbuds wirelessis difficulty in pairing them with your device. This problem can arise for several reasons, including outdated software, interference from other Bluetooth devices, or the earbuds being out of range.</p>
+                        <p>Solution:</p>
+                      <ul>
+                        <li>Reset your earbuds: <br> Most wireless earbuds come with a reset function. Refer to your user manual to reset them to factory settings.</li>
+                        <li>Update your device’s software: <br> Ensure your smartphone or tablet is running the latest version of its operating system, as updates often fix Bluetooth-related bugs.</li>
+                        <li>Reduce interference: <br> Turn off other Bluetooth devices that might be interfering with the connection, and make sure your earbuds are within the recommended range of your device (usually around 30 feet).</li>
+                      </ul>
+                    </li>
+                    <li><strong>Earbuds Connecting to the Wrong Device</strong>
+                        <p class="card-text">If you own multiple Bluetooth-enabled devices, your earbuds might automatically connect to the wrong one, leading to frustration when you’re trying to listen on a specific device.</p>
+                        <p class="card-text">Solution:</p>
+                      <ul>
+                        <li>Forget the earbuds on unused devices: Go into the Bluetooth settings of devices you’re not using and select “Forget this device” to prevent automatic connections.</li>
+                        <li>Use the device priority feature: Some advanced wireless earbuds, like those from Zero Lifestyle, offer a feature to prioritize connection to specific devices. Check if your earbuds have this feature and set your preferred device as the priority.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <p><strong>Sound Quality Issues With Earbuds Wireless</strong></p>
+                  <ul>
+                    <li><strong>Poor Sound Quality or Distorted Audio</strong>
+                        <p class="card-text">Experiencing poor sound quality is one of the most frustratingissues with earbuds. This can be caused by a number of factors, including a low battery, poor Bluetooth connection, or interference from other electronic devices.</p>
+                        <p>Solution:</p>
+                      <ul>
+                        <li>vCharge your earbuds: Low battery levels can affect sound quality, so ensure your earbuds are fully charged.</li>
+                        <li>Improve your Bluetooth connection: Ensure there are no obstructions between your earbuds and your device, and try to keep them as close as possible to avoid signal interference.</li>
+                        <li>Check for interference: Avoid using your earbuds near devices that can cause interference, such as microwaves, Wi-Fi routers, or other Bluetooth devices.</li>
+                      </ul>
+                    </li>
+                    <li><strong>Earbuds Connecting to the Wrong Device</strong>
+                        <p class="card-text">If you own multiple Bluetooth-enabled devices, your earbuds might automatically connect to the wrong one, leading to frustration when you’re trying to listen on a specific device.</p>
+                        <p class="card-text">Solution:</p>
+                      <ul>
+                        <li>Forget the earbuds on unused devices: Go into the Bluetooth settings of devices you’re not using and select “Forget this device” to prevent automatic connections.</li>
+                        <li>Use the device priority feature: Some advanced wireless earbuds, like those from Zero Lifestyle, offer a feature to prioritize connection to specific devices. Check if your earbuds have this feature and set your preferred device as the priority.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <h6><strong>Common Connectivity Issues With Earbuds Wireless</strong></h6>
+                  <ul>
+                    <li><strong>Bluetooth Pairing Problems</strong>
+                        <p class="card-text">One of the most frequentissues with earbuds wirelessis difficulty in pairing them with your device. This problem can arise for several reasons, including outdated software, interference from other Bluetooth devices, or the earbuds being out of range.</p>
+                        <p>Solution:</p>
+                      <ul>
+                        <li>Reset your earbuds: <br> Most wireless earbuds come with a reset function. Refer to your user manual to reset them to factory settings.</li>
+                        <li>Update your device’s software: <br> Ensure your smartphone or tablet is running the latest version of its operating system, as updates often fix Bluetooth-related bugs.</li>
+                        <li>Reduce interference: <br> Turn off other Bluetooth devices that might be interfering with the connection, and make sure your earbuds are within the recommended range of your device (usually around 30 feet).</li>
+                      </ul>
+                    </li>
+                    <li><strong>Earbuds Connecting to the Wrong Device</strong>
+                        <p class="card-text">If you own multiple Bluetooth-enabled devices, your earbuds might automatically connect to the wrong one, leading to frustration when you’re trying to listen on a specific device.</p>
+                        <p class="card-text">Solution:</p>
+                      <ul>
+                        <li>Forget the earbuds on unused devices: Go into the Bluetooth settings of devices you’re not using and select “Forget this device” to prevent automatic connections.</li>
+                        <li>Use the device priority feature: Some advanced wireless earbuds, like those from Zero Lifestyle, offer a feature to prioritize connection to specific devices. Check if your earbuds have this feature and set your preferred device as the priority.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <p><strong>Sound Quality Issues With Earbuds Wireless</strong></p>
+                  <ul>
+                    <li><strong>Poor Sound Quality or Distorted Audio</strong>
+                        <p class="card-text">Experiencing poor sound quality is one of the most frustratingissues with earbuds. This can be caused by a number of factors, including a low battery, poor Bluetooth connection, or interference from other electronic devices.</p>
+                        <p>Solution:</p>
+                      <ul>
+                        <li>vCharge your earbuds: Low battery levels can affect sound quality, so ensure your earbuds are fully charged.</li>
+                        <li>Improve your Bluetooth connection: Ensure there are no obstructions between your earbuds and your device, and try to keep them as close as possible to avoid signal interference.</li>
+                        <li>Check for interference: Avoid using your earbuds near devices that can cause interference, such as microwaves, Wi-Fi routers, or other Bluetooth devices.</li>
+                      </ul>
+                    </li>
+                    <li><strong>Earbuds Connecting to the Wrong Device</strong>
+                        <p class="card-text">If you own multiple Bluetooth-enabled devices, your earbuds might automatically connect to the wrong one, leading to frustration when you’re trying to listen on a specific device.</p>
+                        <p class="card-text">Solution:</p>
+                      <ul>
+                        <li>Forget the earbuds on unused devices: Go into the Bluetooth settings of devices you’re not using and select “Forget this device” to prevent automatic connections.</li>
+                        <li>Use the device priority feature: Some advanced wireless earbuds, like those from Zero Lifestyle, offer a feature to prioritize connection to specific devices. Check if your earbuds have this feature and set your preferred device as the priority.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            <!-- card end -->
+                                   <!-- Footer-1-start -->
+                                   <nav class="navbar navbar-expand-lg bg-dark" style="padding: 3rem; margin-left: 10%;margin-right: 10%;">
+                                    <div class="container-fluid">
+                                      <div class="container-11 col-md-6">
+                                        <h3 style="color: white;">SIGN UP FOR OUR NEWSLETTER</h3>
+                                        <p style="color: white; font-size: medium" >Be the first own to know about our offers, product launch and events</p>
+                                      </div>
+                                      <div class="container-12 col-md-6">
+                                        <div class="input-group mb-3">
+                                          <input type="text" class="form-control" placeholder="Enter Your Email" aria-label="Enter Your Email" aria-describedby="button-addon2" style="width: 6rem; height: 4rem;">
+                                          <button class="btn btn-danger" type="button" id="button-addon2" style="width: 7rem; height: 4rem;">Subscribe</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </nav>
+                                  <!-- Footer-1-end -->
+                                  <!-- Footer-2-start -->
+                                  <nav class="navbar navbar-expand-lg bg-light" style="padding: 3rem;margin-left: 10%; margin-right: 10%;">
+                                    <div class="container-fluid col-sm-12">
+                                      <div class="container-12 col-sm-3">
+                                          <img src="Assets/logo zero.webp" style="width: 10rem;">
+                                        <h3 style="margin-top: 1rem;">Follow Us</h3>
+                                        <a href=""><i class="fa-brands fa-instagram" style=" margin-top: 0.5rem; width: 1.5rem; "></i></a>
+                                        <a href=""><i class="fa-brands fa-square-facebook" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                                        <a href=""><i class="fa-brands fa-paypal" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                                        <a href=""><i class="fa-brands fa-twitter" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                                        <a href=""><i class="fa-brands fa-tiktok" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                                        <a href=""><i class="fa-brands fa-square-snapchat" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                                        <a href=""><i class="fa-brands fa-linkedin-in" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                                        <a href=""><i class="fa-brands fa-youtube" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                                      </div>
+                                      <div class="container-13 col-sm-3">
+                                        <h3  style="margin-top: 1rem;">QUICK LINKS</h3>
+                                        <ul>
+                                          <li style="list-style: none;"><a style="text-decoration: none;" href="#">Home</a></li>
+                                          <li style="list-style: none;"><a style="text-decoration: none;" href="#">Smart Watches</a></li>
+                                          <li style="list-style: none;"><a style="text-decoration: none;" href="">Blogs</a></li>
+                                          <li style="list-style: none;"><a style="text-decoration: none;" href="#">Contact</a></li>
+                                        </ul>
+                                      </div>
+                                      <div class="container-14 col-sm-3">
+                                        <h3 style="margin-top: 2rem;">SUPPORT</h3>
+                                        <ul>
+                                          <li style="list-style: none;"><a style="text-decoration: none;" href="#">FAQs</a></li>
+                                          <li style="list-style: none;"><a style="text-decoration: none;" href="#">Track Your Order</a></li>
+                                          <li style="list-style: none;"><a style="text-decoration: none;" href="">Warranty Registration</a></li>
+                                          <li style="list-style: none;"><a style="text-decoration: none;" href="#">Shipping Details</a></li>
+                                          <li style="list-style: none;"><a style="text-decoration: none;" href="#">Terms & Conditions</a></li>
+                                        </ul>
+                                      </div>
+                                      <div class="container-15 col-sm-3">
+                                        <h3 style="margin-top: 0.5rem;">POLICY</h3>
+                                        <ul>
+                                          <li style="list-style: none;"><a style="text-decoration: none;" href="#">Privacy Policy</a></li>
+                                          <li style="list-style: none;"><a style="text-decoration: none;" href="#">Warranty Policy</a></li>
+                                          <li style="list-style: none;"><a style="text-decoration: none;" href="">Return Policy</a></li>
+                                          <li style="list-style: none;"><a style="text-decoration: none;" href="#">Corporate Policy</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </nav>
+                                  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="width: 80%; margin-left: 10%; margin-right: 10%;">
+                                    <div class="container-fluid">
+                                      <hr>
+                                        <span style="float: left; margin-right: 80%; font-size: medium;">&copy;2024 Zero Lifestyle. All Rights Reserved. | Sitemap</span>
+                                        <span style="float: right; font-size: larger;">Powered by <span style="color: red;">rad.</span></span>
+                                    </div>
+                                  </nav>
+                                   <!-- Footer-2-end -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

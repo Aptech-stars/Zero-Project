@@ -1,0 +1,1016 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+  <style>
+    * {
+        box-sizing: border-box;
+      }
+    .nav-items{
+      font-size: 15px;
+      color: rgb(245, 236, 236);
+    }
+    .nav-links:hover{
+      color: red;
+    }
+    .nav-items{
+      margin-right: 2rem;
+    }
+    #last{
+      margin-right: 10rem;
+    }
+    .logo{
+      width: 7rem;
+
+    }
+    .nav-icon{
+      margin-right: 1.5rem;
+    } 
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        overflow-y: visible;
+        overflow-x: hidden;
+      }
+      
+      /* Float four columns side by side */
+      .column {
+        float: left;
+        width: 20%;
+        padding: 0 10px;
+        border-radius: 10px;
+      }
+      .color-01{
+        display: inline-flex;
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+      .color-001{
+        display: inline-flex;
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+        border-radius: 50%;
+      } 
+       .color-0001{
+        display: inline-flex;
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+      .color-00001{
+        display: inline-flex;
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+      .color-000001{
+        display: inline-flex;
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+      
+      /* Remove extra left and right margins, due to padding in columns */
+      .row {margin: 0 -5px;}
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+     .card-img{ 
+        background-color: #f1f1f1;
+        border-radius: 10px;
+     }
+      /* Style the counter cards */
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+        padding: 10px;
+       
+      }
+      .card-text{
+        font-size: 12px;
+      }
+      /* Responsive columns - one column layout (vertical) on small screens */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+      @media screen and (max-width: 1000px) {
+        .column {
+          width: 50%;
+          display: block;
+          margin-bottom: 20px;
+        }
+    }
+    .btn-1{
+      padding: 10px;
+      font-size:small;
+      float: right;
+    }
+    .Price-items{
+      font-size: 17px;
+    }
+    .salesDiscount{
+      color: red;
+    }
+    .color-text{
+      padding: 7px;
+    }
+</style> 
+  <body class="vh-100">
+       <!-- Frist navbar for marquee tag for sales -->
+     <!-- <div>
+      <nav class="navbar navbar-expand-lg bg-dark text-white" style=" height: 30px;">
+        <div class="container">
+          <div class="w-100 d-flex">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="width: 100%; text-align: center;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <P style=" display: inline; padding: 5px;">Limited Stock only! Up to 77% off. Sales End Soon.</P>
+                </div>
+                <div class="carousel-item">
+                  <P style=" display: inline; padding: 5px;">Limited Stock only! Up to 77% off. Sales End Soon.</P>
+                </div>
+                <div class="carousel-item">
+                  <P style=" display: inline; padding: 5px;">Limited Stock only! Up to 77% off. Sales End Soon.</P>
+                </div>
+              </div>
+            </div>
+        </div>
+       </nav>
+      </div> -->
+      <!-- Frist navbar end -->
+      <!-- Main navbar start -->
+      <nav class="navbar navbar-expand-lg bg-success">
+        <div class="container-fluid">
+          <img src="Assets/logo zero.webp" class="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#" style="margin-left: 150px;">Home</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link text-white" href="Azadi Sale 🇵🇰.html">Azadi Sale 🇵🇰</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link text-white" href="Smart Watches.html">Smart Watches</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="Earbuds.html">EarBuds</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="Support.html">Support</a>
+              </li>
+            </ul>
+          </div>
+          <a href="User.html"><i class="fa-solid fa-user text-white nav-icon"></i></a>
+          <!-- Search Bar start -->
+          <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-magnifying-glass text-white nav-icon"></i></button>
+          <!-- Modal -->
+            <div class="modal fade bg-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                 <div class="modal-content">
+                  <div class="modal-header">
+                  <input type="search" id="exampleModalLabel" placeholder="Search" style="width: 90%; height: 3rem;">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="width: 5%;"></button>
+                  </div>
+               </div>
+              </div>
+             </div>
+          <!-- search bar End -->
+           <!-- Cart start -->
+           <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><a href="cart.html"><i class="fa-solid fa-cart-shopping text-white nav-icon"></a></i></button>
+           <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+             <div class="offcanvas-header">
+               <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+           </div>
+           <div class="offcanvas-body" style="display: none;">
+             <p>Try scrolling the rest of the page to see this option in action.</p>
+           </div>
+          </div>
+          <!-- Cart End -->
+        </div>
+      </nav>
+       <!-- main navbar End -->  
+      <!-- Ads Pic fawad khan start -->
+           <div class="container-16 col-md-12" >
+            <img src="Assets/Azadi_Web_Banner_2.0.webp" class="img-fluid" style=" min-width: 100%;">
+           </div>
+           <!-- Ads Pic fawad khan end -->
+             <!-- Text And links start -->
+      <div class="container-70" style="margin-top: 0.5rem;">
+      <h3 style="display: inline;">Azadi Sale</h3>
+      <p style="display: inline; font-size: 11px; margin-top: 1.5rem;"><a class="View All text-decoration-none text-dark" href="#" >View All ></a></p>
+    </div>
+       <!-- Text And links end -->
+       <div class="row">
+        <div class="column">
+          <div class="card">
+            <a href="Innerwatches.html">
+            <img src="Assets/Watch_1.webp" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">Rover Pro Earbuds</h5>
+                <p class="card-text">Flybird Design | Quad Mic & ENC</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro</span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <a href="Innerwatches2.html">
+            <img src="Assets/Watch_2.webp" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">WAVE Earbuds</h5>
+                <p class="card-text">Quad Mic ENC | IPX 5 Waterproof</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <a href="Innerwatches3.html">
+            <img src="Assets/Watch_3.webp" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">Carbon Earbuds</h5>
+                <p class="card-text">ENC | Super Loud Sound</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <a href="Innerwatches4.html">
+            <img src="Assets/Watch_4.webp" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h6 class="card-title">Flash Earbuds</h6>
+                <p class="card-text">Matte Finish | ENC & Quad Mic | Gaming Mode</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+        <div class="card">
+          <a href="Innerwatches5.html">
+            <img src="Assets/Watch_5.webp" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">Astro Earbuds</h5>
+                <p class="card-text">Quad Mic ENC | Low Latency Gaming Mode</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <a href="Innerwatches6.html">
+            <img src="Assets/Azadi Card1.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">Rover Pro Earbuds</h5>
+                <p class="card-text">Flybird Design | Quad Mic & ENC</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro</span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <a href="Innerwatches7.html">
+            <img src="Assets/Azadi Card25.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">WAVE Earbuds</h5>
+                <p class="card-text">Quad Mic ENC | IPX 5 Waterproof</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+               
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <a href="Innerwatches8.html">
+            <img src="Assets/Azadi Card5.avif" alt="" class="card-img">
+           </a>
+            <div class="card-body">
+                <h5 class="card-title">Carbon Earbuds</h5>
+                <p class="card-text">ENC | Super Loud Sound</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <a href="Innerwatches9.html">
+            <img src="Assets/Azadi Card9.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h6 class="card-title">Flash Earbuds</h6>
+                <p class="card-text">Matte Finish | ENC & Quad Mic | Gaming Mode</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+        <div class="card">
+          <a href="Innerwatches10.html">
+            <img src="Assets/Azadi Card11.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">Astro Earbuds</h5>
+                <p class="card-text">Quad Mic ENC | Low Latency Gaming Mode</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <a href="Innerwatches11.html">
+            <img src="Assets/Azadi Card12.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">Rover Pro Earbuds</h5>
+                <p class="card-text">Flybird Design | Quad Mic & ENC</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro</span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <a href="Innerwatches12.html">
+            <img src="Assets/Azadi Card13.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">WAVE Earbuds</h5>
+                <p class="card-text">Quad Mic ENC | IPX 5 Waterproof</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <a href="Innerwatches13.html">
+            <img src="Assets/Azadi Card14.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">Carbon Earbuds</h5>
+                <p class="card-text">ENC | Super Loud Sound</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <a href="Innerwatches14.html">
+            <img src="Assets/Azadi Card15.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h6 class="card-title">Flash Earbuds</h6>
+                <p class="card-text">Matte Finish | ENC & Quad Mic | Gaming Mode</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+        <div class="card">
+          <a href="Innerwatches15.html">
+            <img src="Assets/Azadi Card21.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">Astro Earbuds</h5>
+                <p class="card-text">Quad Mic ENC | Low Latency Gaming Mode</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <a href="Innerwatches16.html">
+            <img src="Assets/Azadi Card22.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">Rover Pro Earbuds</h5>
+                <p class="card-text">Flybird Design | Quad Mic & ENC</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro</span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <a href="Innerwatches17.html">
+            <img src="Assets/Azadi Card23.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">WAVE Earbuds</h5>
+                <p class="card-text">Quad Mic ENC | IPX 5 Waterproof</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <a href="Innerwatches18.html">
+            <img src="Assets/Azadi Card25.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">Carbon Earbuds</h5>
+                <p class="card-text">ENC | Super Loud Sound</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <a href="Innerwatches19.html">
+            <img src="Assets/Azadi Card26.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h6 class="card-title">Flash Earbuds</h6>
+                <p class="card-text">Matte Finish | ENC & Quad Mic | Gaming Mode</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+        <div class="card">
+          <a href="Innerwatches20.html">
+            <img src="Assets/Azadi Card28.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">Astro Earbuds</h5>
+                <p class="card-text">Quad Mic ENC | Low Latency Gaming Mode</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <a href="Innerwatches21.html">
+            <img src="Assets/Azadi Card29.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">Rover Pro Earbuds</h5>
+                <p class="card-text">Flybird Design | Quad Mic & ENC</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro</span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <a href="Innerwatches22.html">
+            <img src="Assets/Azadi Card30.avif" alt="" class="card-img">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">WAVE Earbuds</h5>
+                <p class="card-text">Quad Mic ENC | IPX 5 Waterproof</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                 Add to Cart
+                </button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <a href="Innerwatches23.html">
+            <img src="Assets/Azadi Card13.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">Carbon Earbuds</h5>
+                <p class="card-text">ENC | Super Loud Sound</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <a href="Innerwatches24.html">
+            <img src="Assets/Azadi Card3.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h6 class="card-title">Flash Earbuds</h6>
+                <p class="card-text">Matte Finish | ENC & Quad Mic | Gaming Mode</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+        <div class="card">
+          <a href="Innerwatches25.html">
+            <img src="Assets/Azadi Card19.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">Astro Earbuds</h5>
+                <p class="card-text">Quad Mic ENC | Low Latency Gaming Mode</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary float-end" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">ADD TO CART</button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+              <!-- text start -->
+               <div class="container-29" style="margin: 2rem;">
+                <h1>Compare Zero Smartwatches</h1>
+               </div>
+                <!-- text End -->
+                <!-- Text-2-start -->
+             <div class="container-12" style="margin-left: 2rem;">
+              <h3>POLICY CRITERIA</h3>
+              <p>We are committed to deliver you the utmost experience without any issue. In case of any complaint process, customers are strictly advised to follow some timelines.</p>
+              <ul>
+                <li>24 Hours Complaints: For physical damage/wrong product complaint, time should be less than 24 hours of delivery.</li>
+                <li>07 Days Complaints: For software issues, it should be less than 07 days.</li>
+                <li>More than 07 Days Complaints: In case of more than 07 days, your complaints will be considered for repair only.</li>
+              </ul>
+              <h3>POLICY EXEMPTIONS</h3>
+              <p>Zero Lifestyle promises to repair/replace the product if it experiences defects or malfunctions. It is important to follow the instructions carefully and make sure to follow all of the below mentioned guidelines before claiming a valid warranty.</p>
+              <ul>
+                <li>Bluetooth Range: The Bluetooth test range should not exceed more than 10 meters.</li>
+                <li>Charging Process: Please do not charge with a fast charger and avoid overcharging.</li>
+                <li>Mobile App Connectivity: Please check the mobile app must be running in the background.</li>
+                <li>Water Resistant: All precautionary steps must be followed to avoid any inconvenience.</li>
+                <li>Battery Timings: Battery timings depend on the usage and connectivity, and it may vary.</li>
+                <li>Health Features: Our smartwatches are not a replacement for a fitness club or medical purposes. It is a high-tech fashion wearable product.</li>
+                <li>Visual Difference: Please note that the actual product may slightly differ due to the visuals or other effects on the screen.</li>
+                <li>Shock Proof: Make sure that you take care of your smartwatch and do not drop it from a height or on rough surfaces.</li>
+              </ul>
+              <p>If you have breached any of the above guideline then warranty might not be claimed from Zero Lifestyle.</p>
+              <h3>POLICY GUIDELINES</h3>
+              <p>Zero makes extra efforts to ensure that you have a great experience with our products. In case of any issues, we would like to make the process easier for you but you need to fulfill these conditions for warranty claim.</p>
+              <ul>
+                <li>The warranty for Zero is limited to the first purchaser of the product and is non-transferable.</li>
+                <li>Please ensure that you have the proof of purchase to avail our warranty service.</li>
+                <li>The warranty is limited to the repair or replacement of products only.</li>
+                <li>You can register for a warranty online <span><a href="" style="text-decoration: none;">here.</a></span></li>
+                <li>We will try to resolve the issue over call or email. We will then proceed for the process if qualified for repair and replacement.</li>
+                <li>You will be requested to ship the product to our location. You shall be responsible for successfully delivering the product to Zero.</li>
+                <li>Out TCS process is absolutely free and customers do not need to pay any delivery charges.</li>
+                <li>Zero will not be responsible for any delay or damage during transit.</li>
+                <li>In case of a replacement, you will be provided a replacement with an equivalent condition.</li>
+                <li>In case of any amount difference customer will transfer the amount online before dispatching.</li>
+                <li>Any liability or claim related to any allergies and rashes caused by Zero products are not covered by Zero.</li>
+                <li>We will try to be quick with the replacement. However, it might take up to 15-20 days.</li>
+                <li>We will make every possible effort to replace actual variant but in case of unavailability it might be replaced with another color.</li>
+              </ul>
+              <h3>POLICY VALIDITY</h3>
+              <p>Our warranty will not be applicable if:</p>
+              <ul>
+                <li>Dullness of color due to regular wear and tear of the product.</li>
+                <li>Any issues related to the look and feel of the product, low sound quality, or limited visibility under sunlight due to dust, dirt, or other particulate matter gathered on the inside of the product.</li>
+                <li>After the expiry of the warranty period whether or not the product was used during the warranty period.</li>
+                <li>If the product is not operated according to the instructions mentioned in policy criteria.</li>
+                <li>Damage to the product resulting from customer abuse, repair by an unauthorized person, damages by children or pets, atmospheric conditions, water logging, non-specified charger, reckless use, extreme temperature, abnormal voltage, liquid-spillage, fluctuating voltage or any other damage that go beyond human-control.</li>
+              </ul>
+              <p>Please fill the form to register your warranty. If you have any trouble in registering, please feel free to email us at complaint@zerolifestyle.co</p>
+             </div>
+            <!-- Text-2-end -->
+             <!-- Footer-1-start -->
+             <nav class="navbar navbar-expand-lg bg-dark" style="padding: 3rem;">
+              <div class="container-fluid">
+                <div class="container-11 col-md-6">
+                  <h3 style="color: white;">SIGN UP FOR OUR NEWSLETTER</h3>
+                  <p style="color: white; font-size: medium" >Be the first own to know about our offers, product launch and events</p>
+                </div>
+                <div class="container-12 col-md-6">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Enter Your Email" aria-label="Enter Your Email" aria-describedby="button-addon2" style="width: 6rem; height: 4rem;">
+                    <button class="btn btn-danger" type="button" id="button-addon2" style="width: 7rem; height: 4rem;">Subscribe</button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <!-- Footer-1-end -->
+            <!-- Footer-2-start -->
+            <nav class="navbar navbar-expand-lg bg-light" style="padding: 3rem;">
+              <div class="container-fluid col-md-12">
+                <div class="container-12 col-md-3">
+                    <img src="Assets/logo zero.webp" style="width: 10rem;">
+                  <h3 style="margin-top: 1rem;">Follow Us</h3>
+                  <a href=""><i class="fa-brands fa-instagram" style=" margin-top: 0.5rem; width: 1.5rem; "></i></a>
+                  <a href=""><i class="fa-brands fa-square-facebook" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                  <a href=""><i class="fa-brands fa-paypal" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                  <a href=""><i class="fa-brands fa-twitter" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                  <a href=""><i class="fa-brands fa-tiktok" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                  <a href=""><i class="fa-brands fa-square-snapchat" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                  <a href=""><i class="fa-brands fa-linkedin-in" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                  <a href=""><i class="fa-brands fa-youtube" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                </div>
+                <div class="container-13 col-md-3">
+                  <h3  style="margin-top: 1rem;">QUICK LINKS</h3>
+                  <ul>
+                    <li style="list-style: none;"><a style="text-decoration: none;" href="#">Home</a></li>
+                    <li style="list-style: none;"><a style="text-decoration: none;" href="#">Smart Watches</a></li>
+                    <li style="list-style: none;"><a style="text-decoration: none;" href="">Blogs</a></li>
+                    <li style="list-style: none;"><a style="text-decoration: none;" href="#">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="container-14 col-md-3">
+                  <h3 style="margin-top: 2rem;">SUPPORT</h3>
+                  <ul>
+                    <li style="list-style: none;"><a style="text-decoration: none;" href="#">FAQs</a></li>
+                    <li style="list-style: none;"><a style="text-decoration: none;" href="#">Track Your Order</a></li>
+                    <li style="list-style: none;"><a style="text-decoration: none;" href="">Warranty Registration</a></li>
+                    <li style="list-style: none;"><a style="text-decoration: none;" href="#">Shipping Details</a></li>
+                    <li style="list-style: none;"><a style="text-decoration: none;" href="#">Terms & Conditions</a></li>
+                  </ul>
+                </div>
+                <div class="container-15 col-md-3">
+                  <h3 style="margin-top: 0.5rem;">POLICY</h3>
+                  <ul>
+                    <li style="list-style: none;"><a style="text-decoration: none;" href="#">Privacy Policy</a></li>
+                    <li style="list-style: none;"><a style="text-decoration: none;" href="#">Warranty Policy</a></li>
+                    <li style="list-style: none;"><a style="text-decoration: none;" href="">Return Policy</a></li>
+                    <li style="list-style: none;"><a style="text-decoration: none;" href="#">Corporate Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <hr>
+                  <span style="float: left; margin-right: 40rem; font-size: larger;">&copy;2024 Zero Lifestyle. All Rights Reserved. | Sitemap</span>
+                  <span style="float: right; font-size: larger;">Powered by <span style="color: red;">rad.</span></span>
+              </div>
+            </nav>
+             <!-- Footer-2-end -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,906 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <style>
+* {
+        box-sizing: border-box;
+      }
+    .nav-items{
+      font-size: 15px;
+      color: rgb(245, 236, 236);
+    }
+    .nav-links:hover{
+      color: red;
+    }
+    .nav-items{
+      margin-right: 2rem;
+    }
+    #last{
+      margin-right: 10rem;
+    }
+    .logo{
+      width: 7rem;
+
+    }
+    .nav-icon{
+      margin-right: 1.5rem;
+    } 
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        overflow-y: visible;
+        overflow-x: hidden;
+      }
+      
+      /* Float four columns side by side */
+      .column {
+        float: left;
+        width: 20%;
+        padding: 0 10px;
+        border-radius: 10px;
+      }
+      .color-01{
+        display: inline-flex;
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+      .color-001{
+        display: inline-flex;
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+        border-radius: 50%;
+      } 
+       .color-0001{
+        display: inline-flex;
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+      .color-00001{
+        display: inline-flex;
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+      .color-000001{
+        display: inline-flex;
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+      
+      /* Remove extra left and right margins, due to padding in columns */
+      .row {margin: 0 -5px;}
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+     .card-img{ 
+        background-color: #f1f1f1;
+        border-radius: 10px;
+     }
+      /* Style the counter cards */
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+        padding: 10px;
+       
+      }
+      .card-text{
+        font-size: 12px;
+      }
+      /* Responsive columns - one column layout (vertical) on small screens */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+      @media screen and (max-width: 1000px) {
+        .column {
+          width: 50%;
+          display: block;
+          margin-bottom: 20px;
+        }
+    }
+    .btn-1{
+      padding: 10px;
+      font-size:small;
+      float: right;
+    }
+    .Price-items{
+      font-size: 17px;
+    }
+    
+ </style> 
+</head>
+  <body class="vh-100">
+      <!-- Frist navbar for marquee tag for sales -->
+      <!-- <div>
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: chartreuse; height: 30px;">
+          <div class="container">
+            <div class="w-100 d-flex">
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="width: 100%; text-align: center;">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <P style=" display: inline; padding: 5px;">Limited Stock only! Up to 77% off. Sales End Soon.</P>
+                  </div>
+                  <div class="carousel-item">
+                    <P style=" display: inline; padding: 5px;">Limited Stock only! Up to 77% off. Sales End Soon.</P>
+                  </div>
+                  <div class="carousel-item">
+                    <P style=" display: inline; padding: 5px;">Limited Stock only! Up to 77% off. Sales End Soon.</P>
+                  </div>
+                </div>
+              </div>
+          </div>
+         </nav>
+        </div> -->
+        <!-- Frist navbar end -->
+         
+        <!-- Main navbar start -->
+        <nav class="navbar navbar-expand-lg bg-success">
+          <div class="container-fluid">
+            <img src="Assets/logo zero.webp" class="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-white" aria-current="page" href="#" style="margin-left: 200px;">Home</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link text-white" href="Azadi Sale 🇵🇰.html">Azadi Sale 🇵🇰</a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="Smart Watches.html">Smart Watches</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="Earbuds.html">EarBuds</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="Support.html">Support</a>
+                </li>
+              </ul>
+            </div>
+            <a href="User.html"><i class="fa-solid fa-user text-white nav-icon"></i></a>
+             <!-- Search Bar start -->
+          <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-magnifying-glass text-white nav-icon"></i></button>
+          <!-- Modal -->
+            <div class="modal fade bg-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                 <div class="modal-content">
+                  <div class="modal-header">
+                  <input type="search" id="exampleModalLabel" placeholder="Search" style="width: 90%; height: 3rem;">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="width: 5%;"></button>
+                  </div>
+               </div>
+              </div>
+             </div>
+          <!-- search bar End -->
+             <!-- Cart start -->
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><a href="cart.html"><i class="fa-solid fa-cart-shopping text-white nav-icon"></a></i></button>
+          <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body" style="display: none;">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
+          </div>
+         </div>
+         <!-- Cart End -->
+          </div>
+        </nav>
+         <!-- main navbar End -->
+          <!-- Ads Pic fawad khan start -->
+           <div class="container-16 col-sm-12" >
+            <img src="Assets/Azadi_Web_Banner_2.0.webp" style="width: 100%;">
+           </div>
+           <!-- Ads Pic fawad khan end -->
+            <!-- cards Azadi -1- start -->
+           <div class="container-17 d-flex" style="margin-top: 1rem;">
+            <div class="card mb-4" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card1.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card2.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card3.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+            <!-- cards Azadi -1- end -->
+               <!-- cards Azadi -2- start -->
+           <div class="container-18 d-flex">
+            <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card4.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card5.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card6.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+            <!-- cards Azadi -2- end -->
+               <!-- cards Azadi -3- start -->
+           <div class="container-19 d-flex">
+            <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card7.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card8.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card9.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+            <!-- cards Azadi -3- end -->
+                            <!-- cards Azadi -4- start -->
+           <div class="container-20 d-flex">
+            <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card10.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card11.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card12.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+            <!-- cards Azadi -4- end -->
+                            <!-- cards Azadi -5- start -->
+           <div class="container-21 d-flex">
+            <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card13.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card14.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card15.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+            <!-- cards Azadi -5- end -->
+                            <!-- cards Azadi -6- start -->
+           <div class="container-22 d-flex">
+            <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card16.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card17.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card18.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+            <!-- cards Azadi -6- end -->
+                            <!-- cards Azadi -7- start -->
+           <div class="container-23 d-flex">
+            <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card19.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card20.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card21.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+            <!-- cards Azadi -7- end -->
+                            <!-- cards Azadi -8- start -->
+           <div class="container-24 d-flex">
+            <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card22.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card23.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card24.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+            <!-- cards Azadi -8- end -->
+                            <!-- cards Azadi -9- start -->
+           <div class="container-25 d-flex">
+            <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card25.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card26.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card27.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+            <!-- cards Azadi -9- end -->
+                            <!-- cards Azadi -10- start -->
+           <div class="container-26 d-flex">
+            <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card28.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card29.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px; margin-left: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="Assets/Azadi Card30.avif" class="img-fluid rounded-start images" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luna Smart Watch</h5>
+                      <p class="card-text">1.39" HD Display Limited Stock</p>
+                      <span>RS 6499</span>
+                      <span><s>21,499</s></span><br>
+                      <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+            <!-- cards Azadi -10- end -->
+             <!-- Azadi Text start -->
+             <div class="container-27" style="margin-left: 15px; margin-top: 15px;">
+                <h1>Azadi Sale 2024 | Pakistan Day Sale | Zero Lifestyle</h1>
+                <h3>Celebrate Azadi Sale with Zero Lifestyle's Unbeatable Deals</h3>
+                <p>As Pakistan Day approaches, Zero Lifestyle is thrilled to announce our Azadi Sale! This 14 August, we're bringing you the best deals on smartwatches and earbuds, celebrating our nation's independence with unbeatable prices and exclusive offers</p>
+                <p>Whether you're looking for the latest in wearable technology or superior audio quality, Zero Lifestyle has you covered. Our Pakistan Day Sale features discounts that are too good to miss, ensuring you get the best products at the best prices</p>
+                <h3>Pakistan Day Sale: Exclusive Offers on Smartwatches and Earbuds</h3>
+                <p>This Pakistan Day Sale, Zero Lifestyle is your ultimate destination for exclusive offers on smartwatches and earbuds. We're celebrating 14 August with massive discounts and special promotions on our top-rated products.</p>
+                <p>Enjoy the latest features and cutting-edge technology with our smartwatches, designed to keep you connected and healthy. Our earbuds offer superior sound quality, perfect for music lovers and fitness enthusiasts alike.</p>
+                <p>Don't miss out on our Azadi Sale, where you'll find unbeatable deals on smartwatches and earbuds. With our Pakistan Day Sale, you're not only getting great prices but also exceptional value.</p>
+                <p>Visit our website to explore all the incredible offers and make the most of this 14 August Sale. Celebrate independence with Zero Lifestyle and take advantage of the best deals on smartwatches and earbuds available</p>
+                <h3>Why Choose Zero Lifestyle for Your Smartwatch and Earbud Sale?</h3>
+                <p>When it comes to finding the perfect smartwatches and earbuds, Zero Lifestyle stands out for several reasons. Our commitment to quality, innovation, and customer satisfaction sets us apart in the marke</p>
+                <p>Our smartwatches and earbuds are crafted using the latest technology, ensuring durability and excellent performance. Stay ahead with features like health monitoring, GPS, and long battery life in our smartwatches. Enjoy superior sound quality and noise cancellation in our earbuds.</p>
+                <p>During our Pakistan Day Sale, you can get top-quality products at unbeatable prices. Our dedicated customer support team is always ready to assist you with any queries or issues. Join thousands of satisfied customers who have chosen Zero Lifestyle for their smartwatch and earbud needs.</p>
+                <h3>14 August Sale: Top Picks and Special Discounts</h3>
+                <p>This 14 August Sale, Zero Lifestyle brings you top picks and special discounts on our best-selling smartwatches and earbuds. Celebrate Pakistan Day with our exclusive offers and enjoy significant savings on your favorite gadgets.</p>
+                <p>Our Zero Smartwatches feature advanced health monitoring, GPS, and long battery life. It's perfect for fitness enthusiasts, tech-savvy individuals, and fashion gurus. The tracking feature in our sports smartwatch is ideal for tracking your daily activities, heart rate, and sleep patterns. Stylish and functional, it’s a great companion for your health journey.</p>
+                <p>Experience superior sound quality with our Zero Lifestyle Earbuds, also known as Zbuds, offering noise cancellation and a comfortable fit. Perfect for sound lovers and commuters.</p>
+                <p>During our Pakistan Day Sale, these top picks come with special discounts that you won’t find elsewhere. Don’t miss the chance to upgrade your tech with the best deals on smartwatches and earbuds. Visit our website to explore more and take advantage of our Azadi Sale before it’s too late!</p>
+                <h3>Smartwatches Sale: Cutting-Edge Technology at Affordable Prices</h3>
+                <p>At Zero Lifestyle, we believe that everyone should have access to the latest technology without breaking the bank. Our smartwatches sale offers cutting-edge technology at affordable prices. Whether you're a fitness enthusiast, a busy professional, or someone who loves staying connected, we have the perfect smartwatch for you.</p>
+                <p>Our smartwatches come with features like health monitoring, GPS, and long battery life. Track your heart rate, monitor your sleep patterns, and stay on top of your fitness goals. With built-in GPS, you can navigate and explore without needing your phone. Enjoy the convenience of receiving notifications, calls, and messages right on your wrist.</p>
+                <p>During our Azadi Sale, you can get these amazing features at unbeatable prices. Don’t miss out on the best deals on smartwatches. Upgrade your tech game with Zero Lifestyle and experience the future on your wrist.</p>
+                <h3>Earbuds Sale: Superior Sound Quality and Comfort</h3>
+                <p>Experience the best in audio technology with Zero Lifestyle’s earbuds sale. Our earbuds are designed to deliver superior sound quality and maximum comfort. Whether you're listening to music, taking calls, or working out, our earbuds provide an immersive audio experience.</p>
+                <p>Our earbuds come with features like noise cancellation, long battery life, and a comfortable fit. Enjoy crystal-clear sound without any distractions, and stay connected all day with extended battery life. The ergonomic design ensures a secure and comfortable fit, making them perfect for all-day wear.</p>
+                <p>Take advantage of our 14 August Sale and get the best deals on earbuds. Celebrate Pakistan Day with Zero Lifestyle and enjoy high-quality sound at affordable prices. Visit our website to explore our range of earbuds and find the perfect pair for you.</p>
+                <h3>How to Avail the Best Deals on Smartwatches and Earbuds</h3>
+                <p>Getting the best deals on smartwatches and earbuds has never been easier with Zero Lifestyle. Here’s how you can make the most of our Azadi Sale:</p>
+                <p>1. Visit Our Website: Browse through our wide range of smartwatches and earbuds deals at www. https://zerolifestyle.co/pages/azadi-sale. We have detailed descriptions and customer reviews to help you make an informed decision.</p>
+                <p>2. Check Out the Discounts: Look for the special discounts and offers available during our Pakistan Day Sale. These deals are exclusive and available for a limited time only.</p>
+                <p>3. Add to Cart: Select your favorite products and add them to your cart. Don’t forget to check for any additional promo codes or coupons that can give you extra savings.</p>
+                <p>4. Secure Checkout: Proceed to checkout and complete your purchase with our secure payment options. Enjoy fast and reliable delivery to your doorstep.</p>
+                <p>5. Stay Updated: Sign up for our newsletter to stay updated on future sales and exclusive offers. Follow us on social media for the latest news and promotions.</p>
+                <p>By following these simple steps, you can avail the best deals on smartwatches and earbuds during our Azadi Sale. Celebrate Pakistan Day with Zero Lifestyle and enjoy the latest technology at unbeatable prices.</p>
+             </div>
+             <!-- Azadi Text End -->
+                <!-- Footer-1-start -->
+                <nav class="navbar navbar-expand-lg bg-dark" style="padding: 3rem;">
+                    <div class="container-fluid">
+                     <div class="container-11 col-md-6">
+                      <h3 style="color: white;">SIGN UP FOR OUR NEWSLETTER</h3>
+                      <p style="color: white; font-size: medium" >Be the first own to know about our offers, product launch and events</p>
+                     </div>
+                     <div class="container-12 col-md-6">
+                       <div class="input-group mb-3">
+                         <input type="text" class="form-control" placeholder="Enter Your Email" aria-label="Enter Your Email" aria-describedby="button-addon2" style="width: 7rem; height: 4rem;">
+                         <button class="btn btn-danger" type="button" id="button-addon2" style="width: 7rem; height: 4rem;">Subscribe</button>
+                       </div>
+                     </div>
+                    </div>
+                  </nav>
+                    <!-- Footer-1-end -->
+                    <!-- Footer-2-start -->
+                    <nav class="navbar navbar-expand-lg bg-light" style="padding: 3rem;">
+                      <div class="container-fluid col-md-12">
+                        <div class="container-12 col-md-3">
+                            <img src="Assets/logo zero.webp" style="width: 10rem;">
+                          <h3 style="margin-top: 1rem;">Follow Us</h3>
+                          <a href=""><i class="fa-brands fa-instagram" style=" margin-top: 0.5rem; width: 1.5rem; "></i></a>
+                          <a href=""><i class="fa-brands fa-square-facebook" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                          <a href=""><i class="fa-brands fa-paypal" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                          <a href=""><i class="fa-brands fa-twitter" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                          <a href=""><i class="fa-brands fa-tiktok" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                          <a href=""><i class="fa-brands fa-square-snapchat" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                          <a href=""><i class="fa-brands fa-linkedin-in" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                          <a href=""><i class="fa-brands fa-youtube" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                        </div>
+                        <div class="container-13 col-md-3">
+                          <h3  style="margin-top: 1rem;">QUICK LINKS</h3>
+                          <ul>
+                            <li style="list-style: none;"><a style="text-decoration: none;" href="#">Home</a></li>
+                            <li style="list-style: none;"><a style="text-decoration: none;" href="#">Smart Watches</a></li>
+                            <li style="list-style: none;"><a style="text-decoration: none;" href="">Blogs</a></li>
+                            <li style="list-style: none;"><a style="text-decoration: none;" href="#">Contact</a></li>
+                          </ul>
+                        </div>
+                        <div class="container-14 col-md-3">
+                          <h3 style="margin-top: 2rem;">SUPPORT</h3>
+                          <ul>
+                            <li style="list-style: none;"><a style="text-decoration: none;" href="#">FAQs</a></li>
+                            <li style="list-style: none;"><a style="text-decoration: none;" href="#">Track Your Order</a></li>
+                            <li style="list-style: none;"><a style="text-decoration: none;" href="">Warranty Registration</a></li>
+                            <li style="list-style: none;"><a style="text-decoration: none;" href="#">Shipping Details</a></li>
+                            <li style="list-style: none;"><a style="text-decoration: none;" href="#">Terms & Conditions</a></li>
+                          </ul>
+                        </div>
+                        <div class="container-15 col-md-3">
+                          <h3 style="margin-top: 0.5rem;">POLICY</h3>
+                          <ul>
+                            <li style="list-style: none;"><a style="text-decoration: none;" href="#">Privacy Policy</a></li>
+                            <li style="list-style: none;"><a style="text-decoration: none;" href="#">Warranty Policy</a></li>
+                            <li style="list-style: none;"><a style="text-decoration: none;" href="">Return Policy</a></li>
+                            <li style="list-style: none;"><a style="text-decoration: none;" href="#">Corporate Policy</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </nav>
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                      <div class="container-fluid">
+                        <hr>
+                          <span style="float: left; margin-right: 40rem; font-size: larger;">&copy;2024 Zero Lifestyle. All Rights Reserved. | Sitemap</span>
+                          <span style="float: right; font-size: larger;">Powered by <span style="color: red;">rad.</span></span>
+                      </div>
+                    </nav>
+                     <!-- Footer-2-end -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

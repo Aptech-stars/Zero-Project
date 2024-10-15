@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+ * {
+        box-sizing: border-box;
+      }
+    .nav-items{
+      font-size: 15px;
+      color: rgb(245, 236, 236);
+    }
+    .nav-links:hover{
+      color: red;
+    }
+    .nav-items{
+      margin-right: 2rem;
+    }
+    #last{
+      margin-right: 10rem;
+    }
+    .logo{
+      width: 7rem;
+
+    }
+    .nav-icon{
+      margin-right: 1.5rem;
+    } 
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        overflow-y: visible;
+        overflow-x: hidden;
+      }
+      
+      /* Float four columns side by side */
+      .column {
+        float: left;
+        width: 20%;
+        padding: 0 10px;
+        border-radius: 10px;
+      }
+      .color-01{
+        display: inline-flex;
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+      .color-001{
+        display: inline-flex;
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+        border-radius: 50%;
+      } 
+       .color-0001{
+        display: inline-flex;
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+      .color-00001{
+        display: inline-flex;
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+      .color-000001{
+        display: inline-flex;
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+      
+      /* Remove extra left and right margins, due to padding in columns */
+      .row {margin: 0 -5px;}
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+     .card-img{ 
+        background-color: #f1f1f1;
+        border-radius: 10px;
+     }
+      /* Style the counter cards */
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+        padding: 10px;
+       
+      }
+      .card-text{
+        font-size: 12px;
+      }
+      /* Responsive columns - one column layout (vertical) on small screens */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+      @media screen and (max-width: 1000px) {
+        .column {
+          width: 50%;
+          display: block;
+          margin-bottom: 20px;
+        }
+    }
+    .btn-1{
+      padding: 10px;
+      font-size:small;
+      float: right;
+    }
+        </style>
+  </head>
+  <body class="vh-100">
+   <!-- Frist navbar for marquee tag for sales -->
+   <!-- <div>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: chartreuse; height: 30px;">
+      <div class="container">
+        <div class="w-100 d-flex">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="width: 100%; text-align: center;">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <P style=" display: inline; padding: 5px;">Limited Stock only! Up to 77% off. Sales End Soon.</P>
+              </div>
+              <div class="carousel-item">
+                <P style=" display: inline; padding: 5px;">Limited Stock only! Up to 77% off. Sales End Soon.</P>
+              </div>
+              <div class="carousel-item">
+                <P style=" display: inline; padding: 5px;">Limited Stock only! Up to 77% off. Sales End Soon.</P>
+              </div>
+            </div>
+          </div>
+      </div>
+     </nav>
+    </div> -->
+    <!-- Frist navbar end -->
+    <!-- Main navbar start -->
+    <nav class="navbar navbar-expand-lg bg-success">
+      <div class="container-fluid">
+        <img src="Assets/logo zero.webp" class="logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#" style="margin-left: 150px;">Home</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link text-white" href="Azadi Sale 🇵🇰.html">Azadi Sale 🇵🇰</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link text-white" href="Smart Watches.html">Smart Watches</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="Earbuds.html">EarBuds</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="Support.html">Support</a>
+            </li>
+          </ul>
+        </div>
+        <a href="User.html"><i class="fa-solid fa-user text-white nav-icon"></i></a>
+        <!-- Search Bar start -->
+          <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-magnifying-glass text-white nav-icon"></i></button>
+          <!-- Modal -->
+            <div class="modal fade bg-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                 <div class="modal-content">
+                  <div class="modal-header">
+                  <input type="search" id="exampleModalLabel" placeholder="Search" style="width: 90%; height: 3rem;">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="width: 5%;"></button>
+                  </div>
+               </div>
+              </div>
+             </div>
+          <!-- search bar End -->
+        <!-- Cart start -->
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><a href="cart.html"><i class="fa-solid fa-cart-shopping text-white nav-icon"></a></i></button>
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" style="display: none;">
+          <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+       </div>
+       <!-- Cart End -->
+      </div>
+    </nav>
+     <!-- main navbar End -->
+         <!-- Ads Pic fawad khan start -->
+         <div class="container-16 col-md-12" >
+            <img src="Assets/Azadi_Web_Banner_2.0.webp" class="img-fluid" style=" min-width: 100%;">
+           </div>
+           <!-- Ads Pic fawad khan end -->
+             <!-- Text And links start -->
+    <div style="margin-top: 1.5rem; margin-left: 2rem;">
+      <h3 style="display: inline; margin-top: 1.5rem;">Azadi Sale</h3>
+      <p style="display: inline; font-size: 11px; margin-top: 1.5rem;"><a class="View All text-decoration-none text-dark" href="#" >View All ></a></p>
+    </div>
+       <!-- Text And links end -->
+        <!-- Text Start -->
+         <div style="margin-top: 1.5rem; margin-left: 2rem;">
+            <span>Home></span>
+            <span>ZBuds Earbuds Price in Pakistan</span>
+         </div>
+         <!-- Text End -->
+          <div style="margin-left: 2rem;">
+            <h1>Zbuds Earbuds Price in Pakistan - The Fashion Tech Revolution</h1>
+          </div>
+
+               
+        <!-- cards start -->
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <a href="">
+            <img src="Assets/Card 01.webp" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">Rover Pro Earbuds</h5>
+                <p class="card-text">Flybird Design | Quad Mic & ENC</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro</span>
+                
+                <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"></button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <a href="">
+            <img src="Assets/Card 02.webp" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">WAVE Earbuds</h5>
+                <p class="card-text">Quad Mic ENC | IPX 5 Waterproof</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"></button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <a href="">
+            <img src="Assets/Card 03.webp" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">Carbon Earbuds</h5>
+                <p class="card-text">ENC | Super Loud Sound</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"></button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <a href="">
+            <img src="Assets/Card 04.webp" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h6 class="card-title">Flash Earbuds</h6>
+                <p class="card-text">Matte Finish | ENC & Quad Mic | Gaming Mode</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"></button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+        <div class="card">
+          <a href="">
+            <img src="Assets/Card 05.webp" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">Astro Earbuds</h5>
+                <p class="card-text">Quad Mic ENC | Low Latency Gaming Mode</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"></button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+         <!-- cards end -->
+        <!-- cards start -->
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <a href="">
+            <img src="Assets/Azadi Card10.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">Rover Pro Earbuds</h5>
+                <p class="card-text">Flybird Design | Quad Mic & ENC</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro</span>
+                
+                <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"></button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <a href="">
+            <img src="Assets/Azadi Card2.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">WAVE Earbuds</h5>
+                <p class="card-text">Quad Mic ENC | IPX 5 Waterproof</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"></button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <a href="">
+            <img src="Assets/Azadi Card4.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">Carbon Earbuds</h5>
+                <p class="card-text">ENC | Super Loud Sound</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"></button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <a href="">
+            <img src="Assets/Azadi Card6.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h6 class="card-title">Flash Earbuds</h6>
+                <p class="card-text">Matte Finish | ENC & Quad Mic | Gaming Mode</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"></button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+        <div class="card">
+          <a href="">
+            <img src="Assets/Azadi Card8.avif" alt="" class="card-img">
+          </a>
+            <div class="card-body">
+                <h5 class="card-title">Astro Earbuds</h5>
+                <p class="card-text">Quad Mic ENC | Low Latency Gaming Mode</p>
+                <hr>
+                <div>
+                    <div class="color-01"></div>
+                    <div class="color-001"></div>
+                    <div class="color-0001"></div>
+                    <div class="color-00001"></div>
+                    <div class="color-000001"></div>
+                </div>
+                <span>Color: Deep Purple Pro </span>
+                
+                <button type="button pill" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"></button>
+                <span>Rs.3,799</span><br>
+                <span style="font-size: xx-small;"><s>Rs.14,999</s></span>
+                <span><strong>|</strong></span>
+                <span class="text-danger"  style="font-size: 10px;">74% OFF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+         <!-- cards end -->
+                 <!-- banner-earbuds start -->
+               <div class="container-16 col-md-12" style="margin-top: 2rem;">
+                <img src="Assets/banner-earbuds.webp" class="img-fluid" style=" min-width: 100%;">
+               </div>
+               <!-- banner-earbuds end -->
+                <!-- Fawad_khan pictures Start -->
+                <div class="container-2" style="margin-top: 2rem;">
+                    <img src="Assets/Fawad_1.webp" class="img" alt="Fawad_1_thumbnail" style="width: 15rem; margin-left: 2rem; height:20rem;">
+                    <img src="Assets/Fawad_2.webp" class="img" alt="Fawad_2_thumbnail" style="width: 15rem; margin-left: 5rem; height:20rem;">
+                    <img src="Assets/Fawad_3.webp" class="img" alt="Fawad_3_thumbnail" style="width: 14rem; margin-left: 5rem; height:20rem;">
+                    <img src="Assets/Fawad_4.webp" class="img" alt="Fawad_4_thumbnail" style="width: 15rem; margin-left: 5rem; height:20rem;">
+                </div>
+                <!-- Fawad_khan pictures End -->
+                 <!-- banner-earbuds start -->
+                 <div class="container-16 col-md-12" style="margin-top: 2rem;">
+                    <img src="Assets/anc_last_bammers.webp" class="img-fluid" style=" min-width: 100%;">
+                   </div>
+                  <!-- banner-earbuds end -->
+                   <!-- banner-earbuds start -->
+                   <div class="container-16 col-md-12">
+                    <img src="Assets/Picture_model.webp" class="img-fluid" style=" min-width: 100%;">
+                   </div>
+                    <!-- banner-earbuds end -->
+                <!-- Text start -->
+                   <div style="margin-top: 2rem;">
+                   <h3 style="margin-top: 2rem;margin-left: 2rem;"><strong>Shop the Best Earbuds in Pakistan – ZBuds!</strong></h3>
+                  <p style="margin-left: 2rem;">Discover the ultimate auditory experience with Zero Lifestyle's premium earbuds, where your beat matters! Designed for audiophiles and casual listeners alike, Zero Lifestyle is dedicated to bringing you the best earbuds in Pakistan, offering unparalleled sound quality at prices that fit any budget. Dive into a world where every note is crisp, and every beat is clear!</p>
+                  <h3 style="margin-top: 2rem;margin-left: 2rem;">Earbuds Starting At Rs 4,500 – Get Ready for Latest Audio Revolution</h3>
+                  <p style="margin-left: 2rem;">Zero Lifestyle is thrilled to introduce the latest addition to our high-fidelity audio lineup. Our range of new earpieces is the culmination of cutting-edge technology and ergonomic design, providing you with a seamless listening experience every time. Whether you're commuting, working out, or just chilling, our ZBuds are the perfect companion for your daily needs.</p>
+                  <h3 style="margin-left: 2rem;">Best Earbuds in Pakistan: Android & iPhone Users Rejoice!</h3>
+                  <p style="margin-left: 2rem;">ZBuds are optimized to be the best earbuds for Android and iPhone. Whether you’re on the Android bandwagon or are in the Apple fraternity, you can be rest assured with ZBuds’ performance because they are created equally for every OS out there!</p>
+                  <h3 style="margin-left:2rem ;">Branded Earbuds, Local Prices: High-Quality Sound Is Now More Accessible!</h3>
+                  <p  style="margin-left: 2rem;">Zero Lifestyle is committed to bringing the best to Pakistan without the hefty price tag. Our earbuds price in Pakistan starts at just Rs 4,500, while the quality is at par with international brands. It's time to enjoy premium audio without breaking the bank!</p>
+                <h3 style="margin-left: 2rem;"><strong>Zero Lifestyle Earbuds Price in Pakistan - Unmatched Sound, Unbeatable Price!</strong></h3>
+                <p style="margin-left: 2rem;margin-top: 2rem;">In the quest for the perfect blend of quality and value, Zero Lifestyle offerings emerge as the clear winner. Experience world-class audio fidelity at the best earbuds price in Pakistan that resonates with your budget. We’re basically setting a new standard of affordability and luxury in the audio market!</p>
+                <h3 style="margin-left: 2rem;">Best Budget Earbuds Wireless: Quality Meets Affordability</h3>
+                <p style="margin-left: 2rem;">We believe in democratizing sound. Zero Lifestyle’s best budget wireless earbuds bring you the rich, detailed audio you deserve without the high-end price tag. Tailored for the discerning listener who’s savvy about both tech and finances, these sound buddies prove that quality sound can be accessible to all.</p>
+                <h3 style="margin-left: 2rem;">Cheap Earbuds Price in Pakistan: Luxury Earbuds Priced At Rs 4,500 Only!</h3>
+                <p style="margin-left: 2rem;">We’re redefining the economic landscape of personal audio. Our competitively priced ZBuds are engineered to deliver superior sound that challenges the notion of “cheap” earbuds. With Zero Lifestyle, affordability does not compromise on quality.</p>
+                <h3 style="margin-left: 2rem;">Best and Cheapest Wireless Earbuds: ZBuds!</h3>
+                <p style="margin-left: 2rem;">Discover the ultimate value with ZBuds – where cost-effectiveness meets premium sound. These are not just the best and cheapest wireless earbuds in the market; they are a statement that excellent sound, great design, and wireless technology should be available to everyone, at every budget.</p>
+                <h3 style="margin-left: 2rem;"><strong>Best Wireless Earbuds With Charging Case: Zero Lifestyle's New Sound Innovation</strong></h3>
+                <p style="margin-left: 2rem;">Zero Lifestyle is at the forefront of wireless audio with sound companions that are a testament to our innovation and your style. We’ve engineered ZBuds to not only deliver exceptional sound quality but to also redefine what you can expect from wireless freedom. Perfect for anyone who refuses to settle for anything less than extraordinary sound!</p>
+                <h3 style="margin-left: 2rem;">Best Gaming Earbuds in Pakistan: Immerse Yourself in Zero Lag Audio!</h3>
+                <p style="margin-left: 2rem;">Gamers, get ready to experience audio that keeps pace with your fastest moves. Zero Lifestyle offers the best gaming earbuds in Pakistan that are designed to deliver real-time sound without lag, ensuring you hear the action the moment it happens. With custom-tuned drivers that emphasize immersive soundscape and deep bass, miss nothing and play at your best with our ZBuds!</p>
+                <h3 style="margin-left: 2rem;">Earbuds with Power Bank: Never Miss a Beat with Extended Playtimes</h3>
+                <p style="margin-left: 2rem;">With Zero Lifestyle’s innovative ZBuds that come with their own power bank, your music goes wherever you go, uninterrupted. The ZBuds are a game-changer for travelers, fitness enthusiasts, and anyone who demands a battery life as long-lasting as their love for music. Charge on the go and live untethered.</p>
+                <h3 style="margin-left: 2rem;">Best Wireless Earbuds in Pakistan: Your Partner in Portable Sound</h3>
+                <p style="margin-left: 2rem;">In Pakistan’s bustling streets and tranquil countryside, our ZBuds are the perfect sound companion for your diverse lifestyle. Zero Lifestyle has designed ZBuds to be as versatile and dynamic as the people who wear them. Experience the freedom of ZBuds that keeps you connected without the constraints of cables.</p>
+                <h3 style="margin-left: 2rem;"><strong>Experience Best-in-Class Bluetooth Earbuds with Zero Lifestyle</strong></h3>
+                <p style="margin-left: 2rem;">Zero Lifestyle's Bluetooth earbuds are where sophistication meets function. Designed for the discerning listener, our ZBuds offer a seamless wireless experience with crystal-clear audio fidelity. It’s time to untangle from the ordinary and embrace the extraordinary.</p>
+                <h3 style="margin-left: 2rem;">Best Bluetooth Earbuds Price in Pakistan Starting At Rs 4,500</h3>
+                <p style="margin-left: 2rem;">Connect effortlessly and listen with clarity. Zero Lifestyle's Bluetooth ZBuds pair instantly with your devices, providing you with a stable connection and uninterrupted sound. Crafted for those who appreciate the finer details, these sound buddies deliver crisp highs and deep lows, enveloping you in pure sound.</p>
+                <h3 style="margin-left: 2rem;">True Wireless Earbuds Price in Pakistan: Experience the Freedom of Zero Wires</h3>
+                <p style="margin-left: 2rem;">The future of listening is here, and it's completely wire-free. Enjoy the ultimate freedom with Zero Lifestyle's true wireless ZBuds experience, starting at price Rs 4,500. Move freely, with no strings attached, and no compromise in sound quality.</p>
+                <h3 style="margin-left: 2rem;">Best Earbuds for Calls: Clear Conversations, Anywhere, Anytime</h3>
+                <p style="margin-left: 2rem;">Your calls, crystal clear. Zero Lifestyle ZBuds are equipped with advanced microphones that ensure your voice is heard loud and clear, no matter where you are. Say goodbye to call drops and background noise. With ZBuds, every conversation feels like a face-to-face meeting.</p>
+                <h3 style="margin-left: 2rem;">Crystal-Clear Conversations: Zero Lifestyle's Best Smartphone Earbuds with Microphone</h3>
+                <p style="margin-left: 2rem;">When it comes to uninterrupted calls and flawless sound quality, Zero Lifestyle's smartphone earbuds with a built-in microphone stand out from the crowd. Designed for the dynamic professional and the multitasking individual, ZBuds offer precision audio and superior voice capture technology, ensuring you're heard with clarity and nuance.</p>
+                <h3 style="margin-left: 2rem;"><strong>Premium Audio, Smart Pricing: Zero Lifestyle's Earbuds Range</strong></h3>
+                <p style="margin-left: 2rem;">Step into a world where premium audio doesn't cost a premium. Zero Lifestyle's range of newest earbuds is engineered to deliver exceptional sound quality at prices that make sense. Because we believe the best audio experiences should be a right, not a privilege.</p>
+                <h3 style="margin-left: 2rem;">Best Cheap Wireless Sport Earbuds: Your Workout, Your Pace</h3>
+                <p style="margin-left: 2rem;">Hit your fitness goals with Zero Lifestyle's sport earbuds, designed to keep up with your most intense workouts. With sweat resistance and a secure fit, they stay in place while you move, delivering motivating beats to keep your energy high. Affordable doesn't mean second-best; it means smart shopping for top-tier performance.</p>
+                <h3 style="margin-left: 2rem;">Best Noise Cancelling Earbuds for Sleeping: Drift into Silence</h3>
+                <p style="margin-left: 2rem;">Embrace tranquility with Zero Lifestyle's noise cancelling earbuds, crafted to help you sleep soundly. Block out the world and sink into a peaceful slumber, or relax with your favorite soothing sounds.</p>
+                </div>
+                <!-- Text end -->
+               <!-- Footer-1-start -->
+               <nav class="navbar navbar-expand-lg bg-dark" style="padding: 3rem;">
+                <div class="container-fluid">
+                  <div class="container-11 col-md-6">
+                    <h3 style="color: white;">SIGN UP FOR OUR NEWSLETTER</h3>
+                    <p style="color: white; font-size: medium" >Be the first own to know about our offers, product launch and events</p>
+                  </div>
+                  <div class="container-12 col-md-6">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Enter Your Email" aria-label="Enter Your Email" aria-describedby="button-addon2" style="width: 6rem; height: 4rem;">
+                      <button class="btn btn-danger" type="button" id="button-addon2" style="width: 7rem; height: 4rem;">Subscribe</button>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+              <!-- Footer-1-end -->
+              <!-- Footer-2-start -->
+              <nav class="navbar navbar-expand-lg bg-light" style="padding: 3rem;">
+                <div class="container-fluid col-md-12">
+                  <div class="container-12 col-md-3">
+                      <img src="Assets/logo zero.webp" style="width: 10rem;">
+                    <h3 style="margin-top: 1rem;">Follow Us</h3>
+                    <a href=""><i class="fa-brands fa-instagram" style=" margin-top: 0.5rem; width: 1.5rem; "></i></a>
+                    <a href=""><i class="fa-brands fa-square-facebook" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                    <a href=""><i class="fa-brands fa-paypal" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                    <a href=""><i class="fa-brands fa-square-snapchat" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube" style=" margin-top: 0.5rem; width: 1.5rem;"></i></a>
+                  </div>
+                  <div class="container-13 col-md-3">
+                    <h3  style="margin-top: 1rem;">QUICK LINKS</h3>
+                    <ul>
+                      <li style="list-style: none;"><a style="text-decoration: none;" href="#">Home</a></li>
+                      <li style="list-style: none;"><a style="text-decoration: none;" href="#">Smart Watches</a></li>
+                      <li style="list-style: none;"><a style="text-decoration: none;" href="">Blogs</a></li>
+                      <li style="list-style: none;"><a style="text-decoration: none;" href="#">Contact</a></li>
+                    </ul>
+                  </div>
+                  <div class="container-14 col-md-3">
+                    <h3 style="margin-top: 2rem;">SUPPORT</h3>
+                    <ul>
+                      <li style="list-style: none;"><a style="text-decoration: none;" href="#">FAQs</a></li>
+                      <li style="list-style: none;"><a style="text-decoration: none;" href="#">Track Your Order</a></li>
+                      <li style="list-style: none;"><a style="text-decoration: none;" href="">Warranty Registration</a></li>
+                      <li style="list-style: none;"><a style="text-decoration: none;" href="#">Shipping Details</a></li>
+                      <li style="list-style: none;"><a style="text-decoration: none;" href="#">Terms & Conditions</a></li>
+                    </ul>
+                  </div>
+                  <div class="container-15 col-md-3">
+                    <h3 style="margin-top: 0.5rem;">POLICY</h3>
+                    <ul>
+                      <li style="list-style: none;"><a style="text-decoration: none;" href="#">Privacy Policy</a></li>
+                      <li style="list-style: none;"><a style="text-decoration: none;" href="#">Warranty Policy</a></li>
+                      <li style="list-style: none;"><a style="text-decoration: none;" href="">Return Policy</a></li>
+                      <li style="list-style: none;"><a style="text-decoration: none;" href="#">Corporate Policy</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <hr>
+                    <span style="float: left; margin-right: 40rem; font-size: larger;">&copy;2024 Zero Lifestyle. All Rights Reserved. | Sitemap</span>
+                    <span style="float: right; font-size: larger;">Powered by <span style="color: red;">rad.</span></span>
+                </div>
+              </nav>
+               <!-- Footer-2-end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
